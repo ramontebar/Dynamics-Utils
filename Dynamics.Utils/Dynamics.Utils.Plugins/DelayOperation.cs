@@ -8,18 +8,12 @@ namespace Dynamics.Utils.Plugins
 {
     public class DelayOperation : IPlugin
     {
-
         public string UnsecureConfiguration { get; private set; }
 
         /// <summary>
         /// Milliseconds for Thread.Sleep
         /// </summary>
         public int DelayTime { get; private set; }
-
-        public DelayOperation()
-        {
-        }
-
         public DelayOperation(string unsecureConfiguration)
         {
             this.UnsecureConfiguration = unsecureConfiguration;
@@ -33,7 +27,7 @@ namespace Dynamics.Utils.Plugins
             ITracingService tracingService =
                 (ITracingService)serviceProvider.GetService(typeof(ITracingService));
 
-            tracingService.Trace("Starting... sleeping for {0} ms", DelayTime);
+            tracingService.Trace("Start sleeping for {0} ms", DelayTime);
 
             System.Threading.Thread.Sleep(DelayTime);
 
