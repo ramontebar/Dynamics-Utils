@@ -8,10 +8,10 @@ using Microsoft.Xrm.Sdk;
 namespace Dynamics.Utils.Tests
 {
     [TestClass]
-    public class CreateTasksTest
+    public class ProxyTimeout
     {
         [TestMethod]
-        public void RunCreateTasksTest()
+        public void CreateTaskWithTimeout()
         {
             string dynamicsConnectionString = ConfigurationManager.ConnectionStrings["DynamicsConnectionString"].ConnectionString;
             CrmServiceClient crmServiceClient = new CrmServiceClient(dynamicsConnectionString);
