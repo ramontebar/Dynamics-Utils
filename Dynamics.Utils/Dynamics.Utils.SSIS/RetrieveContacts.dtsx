@@ -7,12 +7,12 @@
   DTS:CreatorName="DESKTOP-PDGNV1A\Ramon"
   DTS:DTSID="{3010ED4B-94E2-4F65-BFF1-6D7AA30D7DCA}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.1100.123"
+  DTS:LastModifiedProductVersion="15.0.2000.71"
   DTS:LocaleID="2057"
   DTS:ObjectName="RetrieveContacts"
   DTS:PackageType="5"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{E53635F2-CBD6-4AE2-B26A-C26CD4208CA7}">
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{468234A2-50A9-41E0-A4FC-DC9551DE814F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -23,11 +23,7 @@
       DTS:ObjectName="Dynamics CRM Connection Manager">
       <DTS:ObjectData>
         <CrmConnectionManager
-          ConnectionString="AuthenticationType=OnlineFederation;ServiceEndpoint=Soap2011;DiscoveryServerUrl=https://disco.crm11.dynamics.com;UserName=ramon@mvp201706.onmicrosoft.com;Domain=;OrganizationName=&quot;CRM MVP TEST&quot;;CrmServerUrl=https://mvp201706test.api.crm11.dynamics.com;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;ApiVersion=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False">
-          <Password
-            Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAtmGYJWfzfUOCI2GL2J9LoQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACQO5sS+AU5mxDher11S9x8DvKL60AvMSWsPwZ9vnaLPgAAAAAOgAAAAAIAACAAAADF6AQS+EH7KfIfG+QA8b3iqYVPQC3IO6LsLe7fxaiCrSAAAACwqw79ICKuyRgFTtSN3J1JYeWSqVMep3G0TvAxHy7IGEAAAAC6KLPzRKL2kadlNZigYEWe/DOvmLw0t96vnk+zN92xsGcZr38IrQunvRa2aScuUMHeeuQrdNG/sY4fEXk29Nc1</Password>
-        </CrmConnectionManager>
+          ConnectionString="AuthenticationType=OnlineFederation;ServiceEndpoint=Soap2011;DiscoveryServerUrl=https://disco.crm11.dynamics.com;UserName=ramon@mvp201706.onmicrosoft.com;Domain=;OrganizationName=&quot;CRM MVP TEST&quot;;CrmServerUrl=https://mvp201706test.api.crm11.dynamics.com;ProxyUsername=;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;BypassProxyOnLocal=False;HomeRealmUri=;ApiVersion=;ServiceTimeout=120;RetryOnIntermittentErrors=True;IgnoreCertificateErrors=False" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -1562,12 +1558,12 @@
           Id="Package\Data Flow Task\Flat File Destination"
           TopLeft="234,171" />
         <NodeLayout
-          Size="193,42"
+          Size="188,42"
           Id="Package\Data Flow Task\Dynamics CRM Source"
           TopLeft="229,68" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Primary Output]"
-          TopLeft="323.75,110">
+          TopLeft="322.5,110">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
