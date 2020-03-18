@@ -43,5 +43,23 @@ namespace Dynamics.Utils.Tests
 
             crmServiceClient.Retrieve("task", taskid, new Microsoft.Xrm.Sdk.Query.ColumnSet(false));
         }
+
+        [TestMethod]
+        public void CrmServiceClientMaxConnectionTimeOut()
+        {
+            string connectionString =
+                "authtype=ClientSecret;" +
+                "url=https://mvp20200218.crm11.dynamics.com;" +
+                "clientid=6a268676-1043-4b1e-b1d8-d89b7859eeb5;" +
+                "clientsecret=[SECRET]";
+
+            CrmServiceClient.MaxConnectionTimeout = new TimeSpan(0, 0, 15);
+
+            CrmServiceClient crmServiceClient = new CrmServiceClient(connectionString);
+            
+            Guid taskid = crmServiceClient.Create(new Entity("task"));
+
+            crmServiceClient.Retrieve("task", taskid, new Microsoft.Xrm.Sdk.Query.ColumnSet(false));
+        }
     }
 }
