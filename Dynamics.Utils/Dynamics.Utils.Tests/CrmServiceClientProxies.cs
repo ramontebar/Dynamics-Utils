@@ -19,7 +19,7 @@ namespace Dynamics.Utils.Tests
                 "AuthType=Office365;" +
                 "Url=https://mvp20200218.crm11.dynamics.com;" +
                 "Username=ramon@mvp20200218.onmicrosoft.com;" +
-                "Password=SupCRM2001;";
+                "Password=[PASSWORD];";
 
             CrmServiceClient crmServiceClient = new CrmServiceClient(connectionString);
             Assert.IsNotNull(crmServiceClient.OrganizationServiceProxy);
@@ -36,7 +36,7 @@ namespace Dynamics.Utils.Tests
                 "authtype=ClientSecret;" +
                 "url=https://mvp20200218.crm11.dynamics.com;" +
                 "clientid=6a268676-1043-4b1e-b1d8-d89b7859eeb5;" +
-                "clientsecret=2RYA69pG.Pk]xL[I[dE5sUrhs3-2GTpk";
+                "clientsecret=[SECRET]";
 
             CrmServiceClient crmServiceClient = new CrmServiceClient(connectionString);
             Assert.IsNull(crmServiceClient.OrganizationServiceProxy);
